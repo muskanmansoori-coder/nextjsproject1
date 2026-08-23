@@ -8,7 +8,7 @@ const users= () => {
     const[users,setUsers]=useState([])
   const {token}=  useAuth();
     const getUsers = async() => {
-const response = await fetch("http://localhost:3000/api/admin/users",{
+const response = await fetch("/api/admin/users",{
 method:"GET",
 headers:{
     Authorization:`Bearer ${token}`,
@@ -33,7 +33,7 @@ if(response.ok){
       const deleteUser =async(id) => {
 console.log("deleteid", id);
 try {
-   const response = await fetch(`http://localhost:3000/api/admin/users/delete/${id}`,{
+   const response = await fetch(`/api/admin/users/delete/${id}`,{
     method:"DELETE",
     headers:{
         Authorization:`Bearer ${token}`,

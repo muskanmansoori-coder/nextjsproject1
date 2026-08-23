@@ -17,7 +17,7 @@ const editPage = () => {
     console.log("params", params);
     
     const   getsingleUser = async(id) => {
-const response=await fetch(`http://localhost:3000/api/admin/users/edit/${id}`,{
+const response=await fetch(`/api/admin/users/edit/${id}`,{
     method:"GET",
 
     headers:{
@@ -55,7 +55,7 @@ console.log("singleuser data is not find ");
       const hadnleSubmit = async(e) =>{
 e.preventDefault();
 try {
-  const response=await fetch(`http://localhost:3000/api/admin/users/edit/${id}`,{
+  const response=await fetch(`/api/admin/users/edit/${id}`,{
     method:"PATCH",
     headers:{
       Authorization:`Bearer ${token}`,

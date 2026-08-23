@@ -8,7 +8,7 @@ const contacts= () => {
     const[contacts,setContacts]=useState([])
   const {token}=  useAuth();
     const getContacts = async() => {
-const response = await fetch("http://localhost:3000/api/admin/contacts",{
+const response = await fetch("/api/admin/contacts",{
 method:"GET",
 headers:{
     Authorization:`Bearer ${token}`,

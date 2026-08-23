@@ -1,0 +1,23 @@
+.footer {
+    background-color: #b3ebc3;
+    padding: 1.3rem 0;
+    text-align: center;
+    margin-top: 4rem;
+  }
+  
+  .footer p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Mobile */
+  @media (max-width: 768px) {
+    .footer {
+      padding: 1.5rem 0;
+    }
+  
+    .footer p {
+      font-size: 1.4rem;
+    }
+  }

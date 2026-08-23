@@ -1,0 +1,25 @@
+li{
+    list-style-type: none;
+    font-size: 1.32rem;
+   color:#b3ebc3;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+}
+.active{
+    color: #e0a606;
+}
+.navbar {
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+   
+    min-height: 2rem;
+  }
+  .logo{
+font-size: 1.8rem;
+color:#b3ebc3;
+font-weight: 700;
+  }

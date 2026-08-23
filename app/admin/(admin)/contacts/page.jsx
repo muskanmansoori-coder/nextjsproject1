@@ -32,7 +32,7 @@ if(response.ok){
       //deleteContact
       const deleteContact =async(id)=>{
         try {
-            const response = await fetch(`http://localhost:3000/api/admin/contacts/delete/${id}`,{
+            const response = await fetch(`/api/admin/contacts/delete/${id}`,{
              method:"DELETE",
              headers:{
                  Authorization:`Bearer ${token}`,

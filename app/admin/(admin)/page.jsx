@@ -32,11 +32,7 @@ const Admin = () => {
     return null;
   }
 
-  return (
-    <div>
-      Admin Dashboard
-    </div>
-  );
+  return null;
 };
 
 export default Admin;

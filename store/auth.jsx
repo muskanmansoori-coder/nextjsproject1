@@ -14,7 +14,7 @@ const[isLoading,setIsLoading]=useState(true)
 const  serviceData =async() => {
  
 
-    const response=await fetch("http://localhost:3000/api/servicedata",{
+    const response=await fetch("/api/servicedata",{
         method:"GET"
     })
     const serv_data=await response.json();
@@ -40,7 +40,7 @@ setToken(tokens);
     // userAuthenticatio
     const  userAuthentication = async() => {
         try{
-            const response = await fetch('http://localhost:3000/api/auth/user',{
+            const response = await fetch('/api/auth/user',{
                 method:"GET",
                 headers:{
                     Authorization:`Bearer ${token}`,
